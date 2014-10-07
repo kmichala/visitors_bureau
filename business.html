@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Example Business</title>
+</head>
+
+
+<body>
+	<div class="business>
+		<span class="name">Example Business Name</span>
+		<span class="location">Example Business Location</span>
+		<span class="phone">Example Business Phone number</span>
+		<span class="hours">Example Hours of operation</span>
+		<span class="description">Description of the example business</span>
+	</div>
+	
+	<div class="navigation">
+		<a href="business.html" rel="prev">Previous {category} business</a>
+		<a href="business.html" rel="next">Next {category} business</a>
+		<a href="{category}list.html" rel="up">Back to {category} businesses list</a>
+	</div>
+		
+	<div class="search-businesses">
+		<form method="GET" action="business.html">
+			<input type="text" name="query" value=""/>
+			<input type="submit"/>
+		</form>
+	</div>	
+
+	<div class="business-editor>
+		<form method="PUT" action="business.html">
+			<input type="text" name="name" value="Example Business Name" />
+			<input type="text" name="location" value="Example Business Location" />
+			<input type="text" name="phone" value="Example Business Phone Number" />
+			<input type="text" name="hours" value="Example Business Hours of Operation" />
+			<input type="text" name="description" value="Description of the example business />
+			<input type="submit" value="Edit Business" />
+		</form>
+	</div>
+	
+	<div class="delete-business">
+		<form method="DELETE" action="business.html">
+			<input type="submit" value="Delete Business" />
+		</form>
+	</div>
+	
+</body>
+
+</html>
