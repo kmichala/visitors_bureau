@@ -1,0 +1,27 @@
+Special Event List
+	A GET request to the Special Event List resource returns a list of links to information about the upcoming Individual Special Event resources, or the message No upcoming special events listed. Status code is 200 OK in either case.
+	A POST request to the Special Event List returns Special event created with the URI of the new special event and the status code 201 Created. If the data is missing required information it returns a 400 Bad Request status code.
+
+Individual Special Event
+	A GET request to an Individual Special Event resource returns either the information about the special event with a 200 OK status code or if the special event is not found a 404 Not Found error code would be returned.
+	PUT to an Individual Special Event resource would require a representation with the Special Event title, location, date, and time. If the request contains all the required properties the response will be Updated Special Event {event-name} with a 200 OK status code. If any of the properties are missing in the request the response would be Special Event’s {property} is required with 400 Bad Request status code. Finally if the special event the request refers to does not exist the response would be a 404 Not Found error code.
+	A DELETE request to an Individual Special Event resource would return the status code 204 No Content 
+
+Shopping Businesses List
+	A GET request to the Shopping Businesses List resource returns either a representation containing links to all the Individual Business resources considered shopping businesses or a message No shopping businesses listed. Both return a 200 OK status code. 
+	A POST request to the Shopping Businesses List returns Business created with the URI of the new business and the status code 201 Created. If the data is missing required information it returns a 400 Bad Request status code.
+
+Eating Businesses List
+	A GET request to the Eating Businesses List resource returns either a representation containing links to all the Individual Business resources considered eating businesses or a message No eating businesses listed. Both return a 200 OK status code.
+	A POST request to the Eating Businesses List returns Business created with the URI of the new business and the status code 201 Created. If the data is missing required information it returns a 400 Bad Request status code.
+
+Nightlife Businesses List
+	A GET request to the Nightlife Businesses List resource returns either a representation containing links to all the Individual Business resources considered nightlife businesses or a message No nightlife businesses listed. Both return a 200 OK status code.
+	A POST request to the Nightlife Businesses List returns Business created with the URI of the new business and the status code 201 Created. If the data is missing required information it returns a 400 Bad Request status code.
+
+Individual Business
+	A GET request to an Individual Business resource returns either the link to the individual business with a 200 OK status code or if the business is not found a 404 Not Found status code.
+	PUT to an Individual Business resource would require a representation with the Business name and URL. If the request contains all the required properties the response will be Updated Business {business-name} with a 200 OK status code. If either of the properties are missing in the request the response would be Business’s {property} is required with 400 Bad Request status code. Finally if the business the request refers to does not exist the response would be a 404 Not Found error code.
+	A DELETE request to an Individual Business resource would return the status code 204 No Content.
+
+
