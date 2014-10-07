@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Special Events List</title>
+</head>
+
+<body>
+	<h1>List of Upcoming Special Events</h1>
+
+	<ol class="events">
+		<li class="event">
+			<a href="event.html" rel="item">Example Event 1</a>
+		</li>
+		<li class="event">
+			<a href="event.html" rel="item">Example Event 2</a>
+		</li>
+		<li class="event">
+			<a href="event.html" rel="item">Example Event 3</a>
+		</li>
+	</ol>
+	
+	<div class="search-events">
+		<form method="GET" action="event.html">
+			<input type="text" name="query" value=""/>
+			<input type="submit"/>
+		</form>
+	</div>
+	
+	<div class="post-event">
+		<form method="POST" action="event.html">
+			<input type="text" name="name" value="" required="true" />
+			<input type="text" name="location" value="" required="true" />
+			<input type="text" name="date" value="" required="true" />
+			<input type="text" name="time" value="" required="true" />
+			<input type="text" name="description" value="" />
+			<input type="submit" value="Post New Upcoming Event"/>
+		</form>
+	</div>
+
+</body>
+
+</html>
