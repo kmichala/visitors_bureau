@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nightlife Businesses List</title>
+</head>
+
+<body>
+	<h1>List of Nightlife Businesses</h1>
+
+	<ol class="nightlife">
+		<li class="business">
+			<a href="business.html" rel="item">Example Nightlife Business 1</a>
+		</li>
+		<li class="business">
+			<a href="business.html" rel="item">Example Nightlife Business 2</a>
+		</li>
+		<li class="business">
+			<a href="business.html" rel="item">Example Nightlife Business 3</a>
+		</li>
+	</ol>
+
+	<div class="navigation">
+		<a href="shopping list.html" rel="related">Browse Shopping Businesses</a>
+		<a href="eating list.html" rel="related">Browse Eating Businesses</a>
+	</div>
+	
+	<div class="search-businesses">
+		<form method="GET" action="business.html">
+			<input type="text" name="query" value=""/>
+			<input type="submit"/>
+		</form>
+	</div>
+	
+	<div class="post-nightlife-business"
+		<form method="POST" action="business.html">
+			<input type="text" name="name" value="" required="true"/>
+			<input type="text" name="location" value="" required="true"/>
+			<input type="text" name="phone" value="" required="true"/>
+			<input type="text" name="hours" value="" required="true"/>
+			<input type="text" name="description" value="" />
+			<input type="submit" value="Post New Nightlife Business" />
+		</form>
+	</div>
+	
+</body>
+
+</html>
