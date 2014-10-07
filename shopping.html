@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shopping Businesses List</title>
+</head>
+
+<body>
+	<h1>List of Shopping Businesses</h1>
+
+	<ol class="shopping">
+		<li class="business">
+			<a href="business.html" rel="item">Example Shopping Business 1</a>
+		</li>
+		<li class="business">
+			<a href="business.html" rel="item">Example Shopping Business 2</a>
+		</li>
+		<li class="business">
+			<a href="business.html" rel="item">Example Shopping Business 3</a>
+		</li>
+	</ol>
+
+	<div class="navigation">
+		<a href="eating list.html" rel="related">Browse Eating Businesses</a>
+		<a href="nightlifelist.html" rel="related">Browse Nightlife Businesses</a>
+	</div>
+	
+	<div class="search-businesses">
+		<form method="GET" action="business.html">
+			<input type="text" name="query" value=""/>
+			<input type="submit"/>
+		</form>
+	</div>
+	
+	<div class="post-shopping-business"
+		<form method="POST" action="business.html">
+			<input type="text" name="name" value="" required="true"/>
+			<input type="text" name="location" value="" required="true"/>
+			<input type="text" name="phone" value="" required="true"/>
+			<input type="text" name="hours" value="" required="true"/>
+			<input type="text" name="description" value="" />
+			<input type="submit" value="Post New Shopping Business" />
+		</form>
+	</div>
+	
+</body>
+
+</html>
