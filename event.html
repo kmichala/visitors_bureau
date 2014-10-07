@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Example Event</title>
+</head>
+
+<body>
+	<div class="event">
+		<span class="name">Example Event Name</span>
+		<span class="location">Example Event Location</span>
+		<span class="date">Example Event Date</span>
+		<span class="time">Example Event Time</span>
+		<span class="description">Description of the example event</span>
+	</div>
+	
+	<div class="navigation">
+		<a href="event.html" rel="prev">Previous Listed Event</a>
+		<a href="event.html" rel="next">Next Listed Event</a>
+		<a href="event list.html" rel="up">Back to the Special Events List</a>
+	</div>
+	
+	<div class="search-events">
+		<form method="GET" action="event.html">
+			<input type="text" name="query" value=""/>
+			<input type="submit"/>
+		</form>
+	</div>
+	
+	<div class="event-editor">
+		<form method="PUT" action="event.html">
+			<input type="text" name="name" value="Example Event Name" />
+			<input type="text" name="location" value="Example Event Location" />
+			<input type="text" name="date" value="Example Event Date" />
+			<input type="text" name="time" value="Example Event Time" />
+			<input type="text" name="description" value="Description of the example event" />
+			<input type="submit" value="Edit Event" />
+		</form>
+	</div>
+	
+	<div class="delete-event">
+		<form method="DELETE" action="event.html">
+			<input type="submit" value="Delete Event" />
+		</form>
+	</div>
+	
+</body>
+
+</html>
